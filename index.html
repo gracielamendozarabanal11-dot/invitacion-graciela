@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mis 15 años | Graciela</title>
+  <meta name="description" content="Invitación a los 15 años de Graciela">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="sparkles">✦　✧　✦</div>
+      <p class="eyebrow">Una celebración muy especial</p>
+      <h1>Graciela</h1>
+      <p class="fifteen">MIS 15 AÑOS</p>
+      <p class="intro">Con mucha alegría quiero compartir contigo este momento tan especial.</p>
+      <a class="button" href="#detalles">Ver invitación</a>
+    </section>
+
+    <section class="card" id="detalles">
+      <p class="eyebrow">Reserva la fecha</p>
+      <h2>18 de octubre de 2026</h2>
+      <div class="details">
+        <div><span>🕛</span><strong>12:00 p. m.</strong></div>
+        <div><span>📍</span><strong>Salones Roma</strong></div>
+      </div>
+      <p class="address">
+        Jr. María Delia cuadra 4 – Cajamarca<br>
+        Pasando el grifo Las Torrecitas, la primera cuadra a la izquierda.
+      </p>
+      <a class="button secondary" target="_blank"
+         href="https://maps.app.goo.gl/tH89Vq44BTtFFuzWA?g_st=awb">Ver ubicación</a>
+    </section>
+
+    <section class="card soft">
+      <p class="eyebrow">Acompáñame</p>
+      <h2>Será un día inolvidable</h2>
+      <p>Tu presencia hará que esta celebración sea aún más especial.</p>
+      <a class="button whatsapp" target="_blank"
+         href="https://wa.me/51952388205?text=Hola%20Graciela%2C%20confirmo%20mi%20asistencia%20a%20tus%2015%20a%C3%B1os.%20%F0%9F%92%97">
+         Confirmar asistencia por WhatsApp
+      </a>
+    </section>
+
+    <section class="music">
+      <div class="music-icon">♫</div>
+      <p><strong>Nuestra canción</strong></p>
+      <p class="small">Iris — Goo Goo Dolls</p>
+      <audio id="music" src="musica.mp3" preload="metadata"></audio>
+      <button class="music-button" onclick="toggleMusic()">▶ Escuchar música</button>
+      <p class="note">Pulsa el botón para iniciar la música.</p>
+    </section>
+
+    <footer>Con cariño, Graciela ♡</footer>
+  </main>
+<script>
+function toggleMusic(){
+  const a=document.getElementById('music');
+  const b=document.querySelector('.music-button');
+  if(a.paused){a.play();b.textContent='❚❚ Pausar música';}
+  else{a.pause();b.textContent='▶ Escuchar música';}
+}
+</script>
+</body>
+</html>
